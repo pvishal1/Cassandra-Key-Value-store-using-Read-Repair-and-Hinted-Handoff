@@ -1,0 +1,44 @@
+syntax = "proto3";
+
+message ClientRequest
+{
+    uint32 key = 1;
+    string value = 2;
+    string type = 3;
+    string consistency = 4;
+}
+
+message ClientResponse
+{
+    uint32 key = 1;
+    string value = 2;
+    string status = 3;
+}
+
+message ServerRequest
+{
+    uint32 key = 1;
+    string value = 2;
+    uint64 timestamp = 3;
+    string type = 4;
+    string replicaname = 5;
+}
+
+message ServerResponse
+{
+    uint32 key = 1;
+    string value = 2;
+    uint64 timestamp = 3;
+    string status = 4;
+}
+
+message KeyValueMessage
+{
+    oneof keyvalue_message
+    {
+        ClientRequest clientRequest = 1;
+        ClientResponse clientResponse = 2;
+        ServerRequest serverRequest = 3;
+        ServerResponse serverResponse = 4;
+    }
+}

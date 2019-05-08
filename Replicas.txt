@@ -1,0 +1,4 @@
+replica0 localhost 9000
+replica1 localhost 9001
+replica2 localhost 9002
+replica3 localhost 9003
