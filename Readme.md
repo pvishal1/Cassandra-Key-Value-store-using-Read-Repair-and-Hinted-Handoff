@@ -1,6 +1,4 @@
-# CS557: Assignment 4
-## Name: Kedar U. Poudwal
-## Name: Pragya Vishalakshi
+# Cassandra-Key-Value-store-using-Read-Repair-and-Hinted-Handoff
 
 -----------------------------------------------------------------------
 -----------------------------------------------------------------------
@@ -9,8 +7,6 @@
 Following are the commands and the instructions to run Make on your project.
 #### Note: Makefile is present in the same folder.
 #### Tools: Make
-#### Status: Completed
-#### Tasks: We worked together for development and testing.
 #### Programming Language: Java
 
 -----------------------------------------------------------------------
